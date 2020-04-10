@@ -1,7 +1,8 @@
-# Flo's Whistle
+# Flo's Whistle: Pandemic
 
-Flo's Whistle is a whistle blowing application for Nurses. It will allow them to easily report
-when staffing levels are low and pose a danger to patients.
+Flo's Whistle is a whistle blowing application for Nurses. It will allow them to easily report when staffing levels are low and pose a danger to patients.
+
+There is no systematic way for front line workers to report shortages of resources, and whistle blowers risk losing their jobs. Flo's Whistle: Pandemic allows anonymous reporting from app on phone for first responders, hospital workers (nurses physicians respiratory therapists), and nursing home staff. The dashboard will show untraceable location by displaying location in congressional district.
 
 Project Lead: Janet Michaelis
 
