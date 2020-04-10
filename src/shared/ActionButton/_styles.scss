@@ -1,0 +1,13 @@
+.ActionButton {
+    padding-bottom: 2.0em;
+    text-align: center;
+
+    .button {
+        @extend .button;
+        background-color: $color-red;
+    }
+
+    p {
+        padding: 0 0.5em;
+    }
+}

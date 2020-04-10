@@ -1,0 +1,27 @@
+.HomePage {
+    @extend .routepage;
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    .Hero {
+        max-width: 411px;
+        margin: 0 auto;
+        align-items: center;
+        background: $color-blue-dark url('/images/nurse.png') center left no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 350px;
+
+        a {
+            @extend .button;
+            background-color: $color-blue;
+            margin: 0.5em;
+        }
+    }
+
+    .content {
+        margin: 1.0em;
+    }
+}
