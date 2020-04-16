@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import ActionButton from 'shared/ActionButton';
 
@@ -8,46 +9,47 @@ const HomePage = props => {
 	return (
 		<div className="HomePage">
 			<div className="Hero">
-				<Link className="HeroButton" to="/map">See Stats</Link>
+				<div className="HeroColumn">
+					<Link className="HeroButton" to="/map">CURIOUS?<br></br>CHECK STATS</Link>
+					<HashLink className="HeroButton" to="#ActionButton">SCROLL TO<br></br>FILE REPORT</HashLink>
+				</div>
 			</div>
 
 			<div className="content">
 				<p>
-				Flo’s Whistle is a secure, anonymous platform where direct
-				care nurses can log instances  of compromised patient safety
-				due to inadequate staffing.  Reports will be aggregated and
-				shown on a US map. This year-long, prospective, experimental
-				data-collection project will help us all better understand
-				the magnitude of staffing-related dangers.
+				<b>Flo's Whistle: Pandemic</b> is a secure, anonymous platform
+				where direct patient care providers in the U.S. can report, once
+				a day, on workplace deficits that are endangering them and their
+				patients.
 				</p>
-
 				<p>
-				We believe that professional nursing care providers who are
-				at the bedside, providing direct care, are far more accurate
-				judges of patients’ needs than any administrator or consultant
-				with spreadsheets and algorithms.
+				The COVID-19 pandemic is exposing many lethal faults in our
+				healthcare system. Direct care providers can see, from within
+				the system, where dangers lie. As witnesses on the front lines,
+				if we can report our first hand knowledge, we can contribute to
+				a fuller understanding of the pandemic situation as it unfolds.
 				</p>
-
 				<p>
-				America’s nurses are highly educated and rigorously trained
-				to give excellent care, but when we’re deprived of the time
-				and resources required to deliver that care, too often we
-				fail our patients. This is unacceptable.
+				This independent data collection experiment builds on the 2018
+				nurse staffing project, Flo’s Whistle. Reports are aggregated and
+				displayed on a dashboard, which includes a map of the U.S. We do
+				not ask for any personally identifiable data.
 				</p>
-
 				<p>
-				With Flo’s Whistle, we’re following the example of nurse
-				Florence Nightingale, a pioneer in the use of statistics and
-				visual display of data. Her research revealed patterns in
-				causes of death among soldiers in the Crimean war, lighting
-				the way for rational policy reforms, and dramatically
-				reducing the suffering and loss of life.
+				With the Flo’s Whistle projects, we’re following the example of
+				pioneering statistician, public health advocate and nurse,
+				Florence Nightingale. Her research and visual display of data
+				revealed patterns in causes of death among soldiers in the Crimean
+				War, lighting the way for rational policy reforms and dramatically
+				reducing suffering and loss of life.
+				</p>
+				<p>
 				We hope to do the same.
 				</p>
 			</div>
 
-			<ActionButton />
-
+			<div id="ActionButton"></div>
+			<ActionButton/>
 		</div>
 	);
 };

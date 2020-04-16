@@ -14,10 +14,18 @@
         flex-direction: row-reverse;
         height: 350px;
 
+        .HeroColumn {
+            display: flex;
+            flex-direction: column;
+
         a {
             @extend .button;
+            max-width: 100%;
             background-color: $color-blue;
             margin: 0.5em;
+            text-align: center;
+            font-weight: bold;
+        }
         }
     }
 
