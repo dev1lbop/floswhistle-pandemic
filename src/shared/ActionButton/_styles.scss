@@ -5,9 +5,16 @@
     .button {
         @extend .button;
         background-color: $color-red;
+        font-weight: bold;
     }
 
     p {
-        padding: 0 0.5em;
+        padding: 0 1em;
+        text-align: left;
+
+        &.header {
+            text-align: center;
+            font-weight: bold;
+        }
     }
 }
