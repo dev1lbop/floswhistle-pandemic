@@ -33,6 +33,7 @@ class ReportPledgePage extends React.Component {
 	render() {
 		return (
 			<div className="ReportPledgePage">
+				<h2>Attestation</h2>
 				<label>I am a: </label>
 				<Select
 					onChange={this.onTypeChange}
@@ -44,17 +45,29 @@ class ReportPledgePage extends React.Component {
 				/>
 				<p>
 					By agreeing to this statement and submitting
-					information to Flo’s Whistle, I swear that I am a
-					state licensed/certified care provider as indicated
-					above. I am currently employed in the facility
-					where this instance occurred and was present for
-					the period of time I am reporting. In my professional
-					opinion, a lack of appropriate staff created unacceptably
-					dangerous conditions for the patients.
+					information to Flo’s Whistle: Pandemic, I swear that I...
 				</p>
+				<ul>
+					<li>
+						am a state licensed/certified patient care provider
+						as indicated above
+					</li>
+					<li>
+						am currently working in my professional capacity in the
+						setting I'm reporting about
+					</li>
+					<li>
+						was present in that setting on the date for which I am
+						reporting
+					</li>
+					<li>
+						have first hand knowledge about all the conditions
+						I describe
+					</li>
+				</ul>
 
 				<div className="agreement-button">
-					<Link className="button" to="/report">I Agree</Link>
+					<Link className="button" to="/report">Agree<br></br>proceed to<br></br>reporting</Link>
 				</div>
 
 			</div>
