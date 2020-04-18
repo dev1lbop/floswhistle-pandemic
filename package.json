@@ -1,5 +1,5 @@
 {
-  "name": "floswhistle",
+  "name": "floswhistle-pandemic",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -28,6 +28,9 @@
   "author": "Code for Dayton",
   "license": "MIT",
   "dependencies": {
+    "@material/form-field": "^5.1.0",
+    "@material/react-checkbox": "^0.15.0",
+    "@material/react-radio": "^0.15.0",
     "autoprefixer": "^8.0.0",
     "copyfiles": "^1.2.0",
     "d3-request": "^1.0.6",
